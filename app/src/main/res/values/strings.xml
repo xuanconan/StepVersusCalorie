@@ -11,13 +11,13 @@
     <string-array name="acknowledgementsList">
 
         <item>
-            Image of Detective Conan
-            \nhttp://static1.comicvine.com/uploads/scale_super/11111/111111327/3278747-dc-detective-conan-17352255-857-933.jpg
+            Introduction of using step counting function in Android
+            \nhttps://www.jianshu.com/p/5d57f7fd84fa
         </item>
 
         <item>
-            How to make a beep in android?
-            \nhttps://stackoverflow.com/questions/12154940/how-to-make-a-beep-in-android
+            Step count algorithm
+            \nhttps://github.com/finnfu/stepcount/tree/master/demo%E4%BB%A5%E5%8F%8A%E7%AE%97%E6%B3%95%E6%96%87%E6%A1%A3
         </item>
 
         <item>
@@ -26,31 +26,18 @@
         </item>
 
         <item>
-            Super Mario Bros Sound
-            \nhttps://downloads.khinsider.com/game-soundtracks/album/super-mario-bros
+            LiteSuits Android ORM framework
+            \nhttps://github.com/litesuits/android-lite-orm
         </item>
 
         <item>
-            Super Mario background pic
-            \nhttp://www.ilikewallpaper.net/iphone-se-wallpaper/Super-Mario/17515
+            Basic use of LiteOrm
+            \nhttps://blog.csdn.net/napoleonbai/article/details/41958725
         </item>
 
         <item>
-            Super Mario background pic2
-            \nhttps://www.pinterest.com/ashpodel/windows-phone-wallpapers/
-        </item>
-
-        <item>
-            Hello Android, Ultimate Tic Tac Toe game
-        </item>
-
-        <item>
-            English Letter Frequency
-            \nhttp://pi.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html
-        </item>
-
-        <item>
-            NUOEL-ccs5510_mod6
+            Step count with accelerator
+            \nhttps://blog.csdn.net/qq402164452/article/details/72775840
         </item>
 
         <item>

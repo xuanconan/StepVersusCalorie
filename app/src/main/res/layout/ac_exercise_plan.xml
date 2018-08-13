@@ -3,12 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#34495E">
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#34495E">
 
             <LinearLayout
                 android:id="@+id/layout_titlebar"
@@ -63,16 +65,17 @@
             </LinearLayout>
 
         </FrameLayout>
-<ImageView
-    android:layout_width="match_parent"
-    android:src="@mipmap/sport"
-    android:scaleType="centerCrop"
-    android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@mipmap/shoes"
+            android:scaleType="centerCrop"
+            android:layout_height="wrap_content" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
-            android:background="#ffffff"
+            android:background="#34495E"
             android:gravity="center_vertical"
             android:orientation="vertical">
 
@@ -88,7 +91,8 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:text="Today's target"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
                     android:textSize="18sp" />
 
                 <EditText
@@ -96,10 +100,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#ffffff"
+                    android:background="#34495E"
                     android:gravity="center_vertical|right"
-                    android:text="7000"
-                    android:textColor="#000000"
+                    android:text="5000"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -120,7 +125,8 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:text="Reminder"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
                     android:textSize="18sp" />
 
                 <CheckBox
@@ -131,7 +137,8 @@
                     android:button="@null"
                     android:checked="true"
                     android:gravity="center_vertical"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
                     android:textSize="50px" />
             </LinearLayout>
 
@@ -152,7 +159,8 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical"
                     android:text="Set Alarm"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
                     android:textSize="18sp" />
 
                 <TextView
@@ -162,21 +170,35 @@
                     android:gravity="center_vertical|right"
                     android:minWidth="300px"
                     android:text="21:00"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
                     android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btn_save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:background="@mipmap/btn_submit_bg"
-            android:text="保存"
-            android:textColor="#ffffff"
-            android:textSize="18dp" />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#f93c3c"
+        android:text="Save"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:theme="@style/Button1Style" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_save"-->
+            <!--android:layout_width="110dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="SAVE"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textStyle="bold"-->
+            <!--android:theme="@style/Button1Style" />-->
 
         <WebView
             android:id="@+id/wv"

@@ -21,36 +21,37 @@
             android:layout_height="200dp"
             android:layout_below="@+id/tv_data"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp" />
+            android:layout_marginTop="50dp"
+            tools:ignore="NotSibling" />
 
         <!--<TextView-->
-            <!--android:id="@+id/tv_data"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:layout_alignParentTop="true"-->
-            <!--android:layout_marginRight="40dp"-->
-            <!--android:layout_marginTop="40dp"-->
-            <!--android:drawableLeft="@mipmap/home_statistical"-->
-            <!--android:drawablePadding="10dp"-->
-            <!--android:gravity="center_vertical"-->
-            <!--android:text="History"-->
-            <!--android:textColor="#333333" />-->
+        <!--android:id="@+id/tv_data"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:drawableLeft="@mipmap/home_statistical"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="History"-->
+        <!--android:textColor="#333333" />-->
 
         <!--<TextView-->
-            <!--android:id="@+id/tv_set"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_above="@+id/cc"-->
-            <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentStart="true"-->
-            <!--android:layout_marginLeft="40dp"-->
-            <!--android:layout_marginStart="40dp"-->
-            <!--android:drawableLeft="@mipmap/home_question_mark"-->
-            <!--android:drawablePadding="10dp"-->
-            <!--android:gravity="center_vertical"-->
-            <!--android:text="Plan"-->
-            <!--android:textColor="#333333" />-->
+        <!--android:id="@+id/tv_set"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/cc"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginStart="40dp"-->
+        <!--android:drawableLeft="@mipmap/home_question_mark"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="Plan"-->
+        <!--android:textColor="#333333" />-->
 
         <TextView
             android:id="@+id/tv_isSupport"
@@ -58,19 +59,19 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/cc"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="80dp"
             android:text="Step counting available"
             android:textColor="@color/green"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="328dp"
-            android:layout_height="65dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_marginBottom="48dp"
+            android:layout_marginBottom="15dp"
             android:elevation="@dimen/elevation_high"
             android:gravity="bottom"
             android:orientation="horizontal">
