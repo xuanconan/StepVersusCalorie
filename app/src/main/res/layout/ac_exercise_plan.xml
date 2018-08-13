@@ -42,6 +42,7 @@
                     android:paddingLeft="10px"
                     android:paddingRight="10px"
                     android:text="Daily plan"
+                    android:textStyle="bold"
                     android:textColor="#ffffff"
                     android:textSize="20sp" />
 

@@ -62,12 +62,12 @@ public class PlanActivity extends AppCompatActivity implements View.OnClickListe
 
     public void initData() {//获取锻炼计划
         sp = new SharedPreferencesUtils(this);
-        String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "7000");
+        String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "5000");
         String remind = (String) sp.getParam("remind", "1");
         String achieveTime = (String) sp.getParam("achieveTime", "20:00");
         if (!planWalk_QTY.isEmpty()) {
             if ("0".equals(planWalk_QTY)) {
-                tv_step_number.setText("7000");
+                tv_step_number.setText("5000");
             } else {
                 tv_step_number.setText(planWalk_QTY);
             }
@@ -120,7 +120,7 @@ public class PlanActivity extends AppCompatActivity implements View.OnClickListe
         }
         achieveTime = tv_remind_time.getText().toString().trim();
         if (walk_qty.isEmpty() || "0".equals(walk_qty)) {
-            sp.setParam("planWalk_QTY", "7000");
+            sp.setParam("planWalk_QTY", "5000");
         } else {
             sp.setParam("planWalk_QTY", walk_qty);
         }

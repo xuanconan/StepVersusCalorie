@@ -65,8 +65,11 @@ public class HistoryActivity extends AppCompatActivity {
             protected void convertView(View item, StepData stepData) {
                 TextView tv_date= CommonViewHolder.get(item,R.id.tv_date);
                 TextView tv_step= CommonViewHolder.get(item,R.id.tv_step);
+                TextView tv_calorie= CommonViewHolder.get(item,R.id.tv_calorie);
+
                 tv_date.setText(stepData.getToday());
                 tv_step.setText(stepData.getStep()+" steps");
+                tv_calorie.setText(Integer.valueOf(stepData.getStep())/25 + "calories");
             }
         });
     }
