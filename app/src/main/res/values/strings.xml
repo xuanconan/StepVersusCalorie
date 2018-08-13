@@ -1,3 +1,64 @@
 <resources>
     <string name="app_name">StepVersusCalorie</string>
+    <string name="title_home">Home</string>
+    <string name="title_plan">Plan</string>
+    <string name="title_history">History</string>
+    <string name="title_acknowledgements">Acknowledge</string>
+    <string name="closeButton">Close</string>
+
+
+
+    <string-array name="acknowledgementsList">
+
+        <item>
+            Image of Detective Conan
+            \nhttp://static1.comicvine.com/uploads/scale_super/11111/111111327/3278747-dc-detective-conan-17352255-857-933.jpg
+        </item>
+
+        <item>
+            How to make a beep in android?
+            \nhttps://stackoverflow.com/questions/12154940/how-to-make-a-beep-in-android
+        </item>
+
+        <item>
+            ListView Tutorial With Example In Android Studio
+            \nhttp://abhiandroid.com/ui/listview
+        </item>
+
+        <item>
+            Super Mario Bros Sound
+            \nhttps://downloads.khinsider.com/game-soundtracks/album/super-mario-bros
+        </item>
+
+        <item>
+            Super Mario background pic
+            \nhttp://www.ilikewallpaper.net/iphone-se-wallpaper/Super-Mario/17515
+        </item>
+
+        <item>
+            Super Mario background pic2
+            \nhttps://www.pinterest.com/ashpodel/windows-phone-wallpapers/
+        </item>
+
+        <item>
+            Hello Android, Ultimate Tic Tac Toe game
+        </item>
+
+        <item>
+            English Letter Frequency
+            \nhttp://pi.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html
+        </item>
+
+        <item>
+            NUOEL-ccs5510_mod6
+        </item>
+
+        <item>
+            Android 8.0 Notification
+            \nhttps://blog.csdn.net/c10WTiybQ1Ye3/article/details/79970928
+        </item>
+
+
+
+    </string-array>
 </resources>

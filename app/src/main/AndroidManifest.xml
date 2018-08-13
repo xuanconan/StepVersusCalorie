@@ -49,6 +49,10 @@
             android:name=".activity.HistoryActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
+        <activity android:name=".activity.AcknowledgementsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" ></activity>
+
+
         <service
             android:name=".step.service.StepService"
             android:priority="1000">

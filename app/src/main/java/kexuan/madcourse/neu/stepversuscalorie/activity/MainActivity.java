@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import kexuan.madcourse.neu.stepversuscalorie.R;
@@ -24,12 +25,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private StepArcView cc;
     private TextView tv_set;
     private TextView tv_isSupport;
+    private TextView tv_acknow;
     private SharedPreferencesUtils sp;
+
 
     private void assignViews() {
         tv_data = (TextView) findViewById(R.id.tv_data);
         cc = (StepArcView) findViewById(R.id.cc);
         tv_set = (TextView) findViewById(R.id.tv_set);
+        tv_acknow = (TextView) findViewById(R.id.acknowledgementsButton);
         tv_isSupport = (TextView) findViewById(R.id.tv_isSupport);
     }
 
@@ -40,18 +44,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         assignViews();
         initData();
         addListener();
+
     }
 
 
     private void addListener() {
         tv_set.setOnClickListener(this);
         tv_data.setOnClickListener(this);
+        tv_acknow.setOnClickListener(this);
     }
 
     private void initData() {
         sp = new SharedPreferencesUtils(this);
-        //customized steps, default as 7000
-        String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "7000");
+        //customized steps, default as 5000
+        String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "5000");
         //set current step as 0 if not walked
         cc.setCurrentCount(Integer.parseInt(planWalk_QTY), 0);
         tv_isSupport.setText("Keep walking!");
@@ -119,6 +125,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_data:
                 startActivity(new Intent(this, HistoryActivity.class));
+                break;
+            case R.id.acknowledgementsButton:
+                startActivity(new Intent(this, AcknowledgementsActivity.class));
                 break;
         }
     }
