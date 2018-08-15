@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/tv_date"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_weight="1"
@@ -18,9 +18,9 @@
 
     <TextView
         android:id="@+id/tv_step"
-        android:layout_width="93dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:text="TextView"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -28,9 +28,9 @@
 
     <TextView
         android:id="@+id/tv_calorie"
-        android:layout_width="87dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:text="TextView"
         android:textColor="@color/white"
         android:textSize="18sp"
