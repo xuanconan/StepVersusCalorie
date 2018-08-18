@@ -125,7 +125,7 @@ public class StepService extends Service implements SensorEventListener {
      */
     private void initTodayData() {
         CURRENT_DATE = getTodayDate();
-        DbUtils.createDb(this, "DylanStepCount");
+        DbUtils.createDb(this, "MyStepCount");
         DbUtils.getLiteOrm().setDebugged(false);
         //获取当天的数据，用于展示
         List<StepData> list = DbUtils.getQueryByWhere(StepData.class, "today", new String[]{CURRENT_DATE});

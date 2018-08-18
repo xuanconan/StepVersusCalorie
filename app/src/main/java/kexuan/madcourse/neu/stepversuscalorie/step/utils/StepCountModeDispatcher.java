@@ -7,10 +7,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Build;
 
-/**
- * 检测手机是否支持计歩
- * Created by dylan on 2016/2/18.
- */
+
 public class StepCountModeDispatcher {
 
     private Context context;

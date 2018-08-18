@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initData() {
         sp = new SharedPreferencesUtils(this);
-        //customized steps, default as 5000
-        String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "5000");
+        //customized steps, default as 8000
+        String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "8000");
         //set current step as 0 if not walked
         cc.setCurrentCount(Integer.parseInt(planWalk_QTY), 0);
         tv_isSupport.setText("Keep walking!");
@@ -91,14 +91,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         public void onServiceConnected(ComponentName name, IBinder service) {
             StepService stepService = ((StepService.StepBinder) service).getService();
             //设置初始化数据
-            String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "5000");
+            String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "8000");
             cc.setCurrentCount(Integer.parseInt(planWalk_QTY), stepService.getStepCount());
 
             //设置步数监听回调
             stepService.registerCallback(new UpdateUiCallBack() {
                 @Override
                 public void updateUi(int stepCount) {
-                    String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "5000");
+                    String planWalk_QTY = (String) sp.getParam("planWalk_QTY", "8000");
                     cc.setCurrentCount(Integer.parseInt(planWalk_QTY), stepCount);
                 }
             });
